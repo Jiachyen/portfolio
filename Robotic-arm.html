@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic Arm Project | Jia Chyen Queek</title>
+    <style>
+        :root {
+            --primary: #2b6cb0;
+            --primary-dark: #2c5282;
+            --primary-light: #ebf8ff;
+            --accent: #e53e3e;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+            background-color: var(--white);
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            margin-bottom: 40px;
+        }
+        .project-image {
+            width: 70%;
+            max-width: 500px;
+            height: auto;
+            max-height: 700px;
+            object-fit: cover;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: block;
+        }
+        .project-video {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: block;
+        }
+        .media-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+        .media-item {
+            flex: 1;
+            min-width: 300px;
+            max-width: 100%;
+        }
+        .project-header {
+            margin-bottom: 2rem;
+        }
+        .project-content {
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        .tech-tag {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .back-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        .download-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--accent);
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            margin-left: 1rem;
+        }
+        .download-button:hover {
+            background: #c53030;
+            transform: translateY(-2px);
+        }
+        .button-container {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        .caption {
+            text-align: center;
+            font-style: italic;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="project-header">
+            <h1>Robotic Arm Project</h1>
+            <p style="opacity: 0.9;">Engineering Symposium in REEdI | 2024</p>
+        </div>
+    </header>
+
+    <main style="padding: 0 20px;">
+        <section class="project-content">
+            <h2 style="color: var(--primary-dark); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">
+                Project Overview
+            </h2>
+            
+            <div class="media-container">
+                <div class="media-item">
+                    <img src="robotic-arm-demo.png" class="project-image" alt="Robotic Arm Project">
+                    <p class="caption">Figure 1: The robotic arm system fully designed from scratch using Autodesk Fusion 360.</p>
+                </div>
+            </div>
+            
+            <h3>Project Description</h3>
+            <p>This project is a fully self-designed robotic arm developed for the 2024 Engineering Symposium. All components were created from scratch, 3D modeled in Fusion 360, and manufactured using 3D printing. The system is controlled by an Arduino Uno with integrated Bluetooth functionality, allowing wireless operation via smartphone. The project reflects a combination of mechanical design, electronics, and embedded systems skills.</p>
+            
+            <h3>Demonstration Videos</h3>
+            <div class="media-container">
+                <div class="media-item">
+                    <video class="project-video" controls>
+                        <source src="robotic-arm-demo1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="caption">Video 1：The gripper of the robotic arm controlled by an Arduino Uno, featuring Bluetooth connectivity for wireless control via a smartphone.</p>
+                </div>
+                <div class="media-item">
+                    <video class="project-video" controls>
+                        <source src="robotic-arm-demo2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="caption">"Video 2: The full robotic arm system controlled by an Arduino Uno, with Bluetooth connectivity enabling wireless operation via a smartphone."</p>
+                </div>
+            </div>
+            
+            <h3>Key Features</h3>
+            <ul>
+                <li>Fully custom-designed 4-axis robotic arm developed for the 2024 Engineering Symposium</li>
+                <li>All mechanical components designed from scratch in Fusion 360</li>
+                <li>3D printed parts using PETG material on the Bambu Lab X1 Carbon printer</li>
+                <li>Arduino Uno-based control system with Bluetooth wireless operation via smartphone</li>
+                <li>Modular design for easy upgrades and experimentation</li>
+                <li>Designed and assembled both mechanical and electrical systems independently</li>
+            </ul>
+            
+            <h3>Challenges</h3>
+            <ul>
+                <li>Originally designed as a 6-axis robotic arm, but motor torque limitations required simplifying to a 4-axis system</li>
+                <li>Built entirely from scratch outside of academic modules, requiring independent learning and initiative</li>
+                <li>Managed the project alongside full-time studies, society involvement, and a part-time job at LANA Asian Street Food</li>
+                <li>Faced challenges with hardware limitations, time constraints, and resource balancing</li>
+                <li>Motivated by personal interest and a desire to demonstrate both technical and soft skills</li>
+            </ul>
+            
+            <h3>Technologies Used</h3>
+            <div>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">Fusion 360</span>
+                <span class="tech-tag">Additive manufacturing</span>
+            </div>
+            
+            <div class="button-container">
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-arrow-left" style="margin-right: 8px;"></i>
+                    Back to Projects
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

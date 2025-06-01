@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Tutor Project | Jia Chyen Queek</title>
+    <style>
+        :root {
+            --primary: #2b6cb0;
+            --primary-dark: #2c5282;
+            --primary-light: #ebf8ff;
+            --accent: #e53e3e;
+            --text: #2d3748;
+            --text-light: #718096;
+            --border: #e2e8f0;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+            background-color: var(--white);
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            margin-bottom: 40px;
+        }
+        /* Changed to vertical photo style */
+        .project-image {
+            width: 70%; /* Narrower width for vertical photo */
+            max-width: 500px;
+            height: auto;
+            max-height: 700px; /* Taller height for vertical photo */
+            object-fit: cover;
+            margin: 2rem auto; /* Centered */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: block;
+        }
+        /* Rest of your original styles remain unchanged */
+        .project-header {
+            margin-bottom: 2rem;
+        }
+        .project-content {
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        .tech-tag {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .back-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        .download-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--accent);
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            margin-left: 1rem;
+        }
+        .download-button:hover {
+            background: #c53030;
+            transform: translateY(-2px);
+        }
+        .button-container {
+            margin-top: 3rem;
+            text-align: center;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="project-header">
+            <h1>N-Tutor Spark Plus Project</h1>
+            <p style="opacity: 0.9;">Improving Team Dynamics Amongst First Year Engineering Undergraduate Students | 2025</p>
+        </div>
+    </header>
+
+    <main style="padding: 0 20px;">
+        <section class="project-content">
+            <h2 style="color: var(--primary-dark); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">
+                Project Overview
+            </h2>
+            
+            <!-- Vertical group photo (only this image changed) -->
+            <img src="project1-demo.jpg.jpg" class="project-image">
+            
+            <h3>Project Background</h3>
+            <p>The SparkPlus Project was a multidisciplinary, student-led initiative designed to enhance team dynamics, accountability, and soft skill development among first-year engineering students. By combining the Tuckman model of team development with structured peer assessment via SparkPlus, the project provided a scaffolded learning experience that encouraged reflection, collaboration, and communication. A major component of the initiative involved running a series of interactive and engaging workshops to introduce students to the SparkPlus platform and teamwork strategies. These sessions included hands-on activities such as the Tower of Hanoi game and reflective group discussions. The project gained international visibility and was presented at a prestigious conference in KU Leuven, Belgium, highlighting its impact and scalability.</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+                <li>Structured around Tuckman’s model (Forming, Storming, Norming, Performing)</li>
+                <li>Delivered a series of interactive workshops to build teamwork and reflection skills</li>
+                <li>Facilitated reflective practice sessions after each assessment round</li>
+                <li>Improved team performance indicators: reduced contribution variability, improved conflict resolution, and communication</li>
+                <li>Presented the project at KU Leuven, Belgium, showcasing its international relevance</li>
+            </ul>
+            
+            <h3>Technologies Used</h3>
+            <div>
+                <span class="tech-tag">SparkPlus</span>
+                <span class="tech-tag">Google Forms</span>
+                <span class="tech-tag">Microsoft PowerPoint</span>
+                <span class="tech-tag">Zoom</span>
+                <span class="tech-tag">Microsoft Teams</span>
+            </div>
+            
+            <div class="button-container">
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-arrow-left" style="margin-right: 8px;"></i>
+                    Back to Projects
+                </a>
+                <a href="poster.pdf" class="download-button" download>
+                    <i class="fas fa-download" style="margin-right: 8px;"></i>
+                    Download Poster
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
