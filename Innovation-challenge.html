@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovation Challenge 2024 | Jia Chyen Queek</title>
+    <meta name="description" content="MTU Innovation Challenge 2024 - Award-winning assistive device design project focusing on sustainability and user-centered design principles.">
+    <meta name="keywords" content="Innovation Challenge, Assistive Technology, User-Centered Design, Sustainability, 3D Printing, MTU, Engineering Design">
+    <meta name="author" content="Jia Chyen Queek">
+    <title>MTU Innovation Challenge 2024 | Jia Chyen Queek</title>
     <style>
         :root {
             --primary: #2b6cb0;
@@ -14,6 +17,7 @@
             --text-light: #718096;
             --border: #e2e8f0;
             --white: #ffffff;
+            --success: #38a169;
         }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -63,12 +67,42 @@
         .project-header {
             margin-bottom: 2rem;
         }
+        .project-header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .project-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 0;
+        }
         .project-content {
             padding: 2rem;
             background: var(--white);
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             margin-bottom: 2rem;
+        }
+        .project-content h2 {
+            color: var(--primary-dark);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .project-content h3 {
+            color: var(--primary-dark);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+        .project-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .project-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
         }
         .tech-tag {
             display: inline-block;
@@ -79,6 +113,7 @@
             font-size: 0.9rem;
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
+            font-weight: 500;
         }
         .back-button {
             display: inline-block;
@@ -94,21 +129,6 @@
             background: var(--primary-dark);
             transform: translateY(-2px);
         }
-        .download-button {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            background: var(--accent);
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.2s ease;
-            margin-left: 1rem;
-        }
-        .download-button:hover {
-            background: #c53030;
-            transform: translateY(-2px);
-        }
         .button-container {
             margin-top: 3rem;
             text-align: center;
@@ -119,6 +139,37 @@
             color: var(--text-light);
             margin-top: 0.5rem;
             margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .highlight-box {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .highlight-box strong {
+            color: var(--primary-dark);
+        }
+        .award-badge {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 640px) {
+            .project-header h1 {
+                font-size: 1.8rem;
+            }
+            .project-content {
+                padding: 1.5rem;
+            }
+            .media-container {
+                flex-direction: column;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -127,54 +178,86 @@
 <body>
     <header>
         <div class="project-header">
-            <h1>Innovation Challenge 2024</h1>
-            <p style="opacity: 0.9;">MTU | 2024</p>
+            <h1>MTU Innovation Challenge 2024</h1>
+            <p>Assistive Technology Design Project</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">2024 | Award-Winning Solution</p>
         </div>
     </header>
 
     <main style="padding: 0 20px;">
         <section class="project-content">
-            <h2 style="color: var(--primary-dark); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">
-                Project Overview
-            </h2>
+            <h2>Project Overview</h2>
+            
+            <div class="award-badge">
+                <i class="fas fa-trophy" style="margin-right: 8px;"></i>
+                Best Solution Award Winner
+            </div>
             
             <div class="media-container">
                 <div class="media-item">
                     <img src="innovation-horizontal.png" class="project-image horizontal-image" alt="Innovation Challenge Project - Horizontal View">
-                    <p class="caption">Figure 1: My Team won the best solution awards in Innovation Challenge 2024.</p>
-                </div>
+                    <p class="caption">Figure 1: Award-winning team presentation at MTU Innovation Challenge 2024</p>
                 </div>
                 <div class="media-item">
                     <img src="innovation-vertical.png" class="project-image vertical-image" alt="Innovation Challenge Project - Vertical View">
-                    <p class="caption">Figure 2: The swing that our team designed.</p>
+                    <p class="caption">Figure 2: Functional prototype of the assistive swing device</p>
                 </div>
             </div>
             
-            <h3>Project Description</h3>
-            <p>As part of an Innovation Challenge, our team developed a user-centered assistive device designed to improve the daily lives of individuals with physical limitations. The project involved extensive research through site visits, interviews with occupational therapists, and direct consultations with end-users and their families. Using insights from this research, we created a functional prototype—3D-printed with sustainable materials selected via Granta EduPack—to ensure environmental responsibility in line with the UN Sustainable Development Goals. The project was presented at a conference and proudly recognized as the best solution.</p>
+            <div class="highlight-box">
+                <strong>Key Achievement:</strong> Our team's solution was selected as the best overall solution at the MTU Innovation Challenge 2024, recognizing our innovative approach to assistive technology design.
+            </div>
             
-            <h3>Key Features</h3>
+            <h3>Project Description</h3>
+            <p>As part of the MTU Innovation Challenge 2024, our team developed a user-centered assistive device designed to improve the daily lives of individuals with physical limitations. The project involved extensive research through site visits, interviews with occupational therapists, and direct consultations with end-users and their families.</p>
+            
+            <p>Using insights from this comprehensive research, we created a functional prototype—3D-printed with sustainable materials selected via Granta EduPack—to ensure environmental responsibility in line with the UN Sustainable Development Goals. The project was presented at a conference and proudly recognized as the best solution.</p>
+            
+            <h3>Design Process & Methodology</h3>
             <ul>
-                <li>Human-centered design informed by interviews and real-world feedback</li>
-                <li>Prototyped using eco-friendly materials for sustainability and accessibility</li>
-                <li>Functional 3D-printed model tailored to user needs</li>
-                <li>Collaborative workflow using digital tools for remote teamwork</li>
-                <li>Final solution selected as the best solution at the conference</li>
+                <li><strong>User Research:</strong> Conducted site visits and interviews with occupational therapists</li>
+                <li><strong>Stakeholder Engagement:</strong> Direct consultations with end-users and their families</li>
+                <li><strong>Human-Centered Design:</strong> Iterative design process based on real user feedback</li>
+                <li><strong>Sustainability Focus:</strong> Material selection using Granta EduPack for environmental responsibility</li>
+                <li><strong>Prototype Development:</strong> Functional 3D-printed model tailored to specific user needs</li>
+                <li><strong>Collaborative Workflow:</strong> Remote teamwork using digital collaboration tools</li>
             </ul>
             
-            <h3>Technologies Used</h3>
+            <h3>Key Features & Innovations</h3>
+            <ul>
+                <li><strong>Accessibility-First Design:</strong> Prioritized user needs and accessibility requirements</li>
+                <li><strong>Sustainable Materials:</strong> Eco-friendly material selection aligned with UN SDGs</li>
+                <li><strong>Functional Prototype:</strong> Working 3D-printed model demonstrating practical application</li>
+                <strong>Evidence-Based Design:</strong> Design decisions informed by professional consultation</li>
+                <li><strong>Scalable Solution:</strong> Framework can be adapted for various assistive technology applications</li>
+                <li><strong>Professional Recognition:</strong> Awarded best solution at the innovation challenge</li>
+            </ul>
+            
+            <h3>Technical Implementation</h3>
+            <ul>
+                <li><strong>CAD Design:</strong> Comprehensive 3D modeling using Fusion 360</li>
+                <li><strong>Additive Manufacturing:</strong> 3D printing for rapid prototyping and testing</li>
+                <li><strong>Material Analysis:</strong> Granta EduPack for sustainable material selection</li>
+                <li><strong>Digital Collaboration:</strong> Microsoft Teams and Google Drive for remote teamwork</li>
+                <li><strong>User Testing:</strong> Iterative testing with target user groups</li>
+            </ul>
+            
+            <h3>Technologies & Tools Used</h3>
             <div>
-                <span class="tech-tag">Fusion 360</span>
-                <span class="tech-tag">Additive manufacturing</span>
+                <span class="tech-tag">Fusion 360 CAD</span>
+                <span class="tech-tag">3D Printing</span>
                 <span class="tech-tag">Granta EduPack</span>
                 <span class="tech-tag">Microsoft Teams</span>
                 <span class="tech-tag">Google Drive</span>
+                <span class="tech-tag">User Research</span>
+                <span class="tech-tag">Prototyping</span>
+                <span class="tech-tag">Sustainable Design</span>
             </div>
             
             <div class="button-container">
                 <a href="index.html" class="back-button">
                     <i class="fas fa-arrow-left" style="margin-right: 8px;"></i>
-                    Back to Projects
+                    Back to Portfolio
                 </a>
             </div>
         </section>

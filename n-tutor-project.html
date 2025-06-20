@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N-Tutor Project | Jia Chyen Queek</title>
+    <meta name="description" content="N-Tutor Spark Plus Project - Improving team dynamics among first-year engineering students through innovative peer assessment and collaborative learning.">
+    <meta name="keywords" content="Team Dynamics, Engineering Education, Peer Assessment, SparkPlus, Collaborative Learning, MTU">
+    <meta name="author" content="Jia Chyen Queek">
+    <title>N-Tutor Spark Plus Project | Jia Chyen Queek</title>
     <style>
         :root {
             --primary: #2b6cb0;
@@ -14,6 +17,7 @@
             --text-light: #718096;
             --border: #e2e8f0;
             --white: #ffffff;
+            --success: #38a169;
         }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -31,21 +35,28 @@
             color: white;
             margin-bottom: 40px;
         }
-        /* Changed to vertical photo style */
         .project-image {
-            width: 70%; /* Narrower width for vertical photo */
+            width: 70%;
             max-width: 500px;
             height: auto;
-            max-height: 700px; /* Taller height for vertical photo */
+            max-height: 700px;
             object-fit: cover;
-            margin: 2rem auto; /* Centered */
+            margin: 2rem auto;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             display: block;
         }
-        /* Rest of your original styles remain unchanged */
         .project-header {
             margin-bottom: 2rem;
+        }
+        .project-header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .project-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 0;
         }
         .project-content {
             padding: 2rem;
@@ -53,6 +64,27 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             margin-bottom: 2rem;
+        }
+        .project-content h2 {
+            color: var(--primary-dark);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .project-content h3 {
+            color: var(--primary-dark);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+        .project-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .project-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
         }
         .tech-tag {
             display: inline-block;
@@ -63,6 +95,7 @@
             font-size: 0.9rem;
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
+            font-weight: 500;
         }
         .back-button {
             display: inline-block;
@@ -97,6 +130,32 @@
             margin-top: 3rem;
             text-align: center;
         }
+        .highlight-box {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .highlight-box strong {
+            color: var(--primary-dark);
+        }
+        @media (max-width: 640px) {
+            .project-header h1 {
+                font-size: 1.8rem;
+            }
+            .project-content {
+                padding: 1.5rem;
+            }
+            .button-container {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .download-button {
+                margin-left: 0;
+            }
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -105,48 +164,62 @@
     <header>
         <div class="project-header">
             <h1>N-Tutor Spark Plus Project</h1>
-            <p style="opacity: 0.9;">Improving Team Dynamics Amongst First Year Engineering Undergraduate Students | 2025</p>
+            <p>Improving Team Dynamics Amongst First Year Engineering Undergraduate Students</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">2024 | Academic Research Project</p>
         </div>
     </header>
 
     <main style="padding: 0 20px;">
         <section class="project-content">
-            <h2 style="color: var(--primary-dark); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">
-                Project Overview
-            </h2>
+            <h2>Project Overview</h2>
             
-            <!-- Vertical group photo (only this image changed) -->
-            <img src="project1-demo.jpg.jpg" class="project-image">
+            <img src="project1-demo.jpg.jpg" class="project-image" alt="N-Tutor Spark Plus Project Team">
+            
+            <div class="highlight-box">
+                <strong>Key Achievement:</strong> This project was presented at KU Leuven, Belgium, demonstrating international recognition of our innovative approach to engineering education.
+            </div>
             
             <h3>Project Background</h3>
-            <p>The SparkPlus Project was a multidisciplinary, student-led initiative designed to enhance team dynamics, accountability, and soft skill development among first-year engineering students. By combining the Tuckman model of team development with structured peer assessment via SparkPlus, the project provided a scaffolded learning experience that encouraged reflection, collaboration, and communication. A major component of the initiative involved running a series of interactive and engaging workshops to introduce students to the SparkPlus platform and teamwork strategies. These sessions included hands-on activities such as the Tower of Hanoi game and reflective group discussions. The project gained international visibility and was presented at a prestigious conference in KU Leuven, Belgium, highlighting its impact and scalability.</p>
+            <p>The SparkPlus Project was a multidisciplinary, student-led initiative designed to enhance team dynamics, accountability, and soft skill development among first-year engineering students. By combining the Tuckman model of team development with structured peer assessment via SparkPlus, the project provided a scaffolded learning experience that encouraged reflection, collaboration, and communication.</p>
             
-            <h3>Key Features</h3>
+            <p>A major component of the initiative involved running a series of interactive and engaging workshops to introduce students to the SparkPlus platform and teamwork strategies. These sessions included hands-on activities such as the Tower of Hanoi game and reflective group discussions.</p>
+            
+            <h3>Methodology & Implementation</h3>
             <ul>
-                <li>Structured around Tuckman’s model (Forming, Storming, Norming, Performing)</li>
-                <li>Delivered a series of interactive workshops to build teamwork and reflection skills</li>
-                <li>Facilitated reflective practice sessions after each assessment round</li>
-                <li>Improved team performance indicators: reduced contribution variability, improved conflict resolution, and communication</li>
-                <li>Presented the project at KU Leuven, Belgium, showcasing its international relevance</li>
+                <li><strong>Structured Framework:</strong> Based on Tuckman's model (Forming, Storming, Norming, Performing)</li>
+                <li><strong>Interactive Workshops:</strong> Delivered comprehensive training sessions to build teamwork and reflection skills</li>
+                <li><strong>Reflective Practice:</strong> Facilitated structured reflection sessions after each assessment round</li>
+                <li><strong>Performance Monitoring:</strong> Tracked team performance indicators and improvement metrics</li>
+                <li><strong>International Presentation:</strong> Showcased findings at KU Leuven, Belgium conference</li>
             </ul>
             
-            <h3>Technologies Used</h3>
+            <h3>Key Outcomes & Impact</h3>
+            <ul>
+                <li><strong>Reduced Contribution Variability:</strong> More balanced participation across team members</li>
+                <li><strong>Improved Conflict Resolution:</strong> Enhanced communication and problem-solving within teams</li>
+                <li><strong>Better Communication:</strong> Structured feedback mechanisms improved team dynamics</li>
+                <li><strong>Scalable Solution:</strong> Framework can be applied to other educational institutions</li>
+                <li><strong>International Recognition:</strong> Project presented at prestigious engineering education conference</li>
+            </ul>
+            
+            <h3>Technologies & Tools Used</h3>
             <div>
-                <span class="tech-tag">SparkPlus</span>
+                <span class="tech-tag">SparkPlus Platform</span>
                 <span class="tech-tag">Google Forms</span>
                 <span class="tech-tag">Microsoft PowerPoint</span>
                 <span class="tech-tag">Zoom</span>
                 <span class="tech-tag">Microsoft Teams</span>
+                <span class="tech-tag">Data Analysis Tools</span>
             </div>
             
             <div class="button-container">
                 <a href="index.html" class="back-button">
                     <i class="fas fa-arrow-left" style="margin-right: 8px;"></i>
-                    Back to Projects
+                    Back to Portfolio
                 </a>
                 <a href="poster.pdf" class="download-button" download>
                     <i class="fas fa-download" style="margin-right: 8px;"></i>
-                    Download Poster
+                    Download Research Poster
                 </a>
             </div>
         </section>

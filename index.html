@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jia Chyen Queek - Mechanical Engineering Student</title>
+    <meta name="description" content="Jia Chyen Queek - Mechanical & Manufacturing Engineering Student Portfolio. View projects, experience, and achievements in engineering innovation and problem-solving.">
+    <meta name="keywords" content="Mechanical Engineering, Manufacturing Engineering, Student Portfolio, Engineering Projects, Innovation, Problem Solving">
+    <meta name="author" content="Jia Chyen Queek">
+    <meta property="og:title" content="Jia Chyen Queek - Engineering Portfolio">
+    <meta property="og:description" content="Mechanical & Manufacturing Engineering Student Portfolio showcasing innovative projects and professional experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jiachyen.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jia Chyen Queek - Engineering Portfolio">
+    <meta name="twitter:description" content="Mechanical & Manufacturing Engineering Student Portfolio">
+    <title>Jia Chyen Queek - Mechanical Engineering Student | Portfolio</title>
     <style>
         :root {
             --primary: #2b6cb0;       /* Professional blue */
@@ -14,13 +24,15 @@
             --text-light: #718096;   /* Lighter text */
             --border: #e2e8f0;      /* Light border */
             --white: #ffffff;       /* Pure white */
+            --success: #38a169;     /* Green for skills */
+            --warning: #d69e2e;     /* Yellow for intermediate skills */
         }
         
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
             color: var(--text);
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 0;
             background-color: var(--white);
@@ -59,6 +71,12 @@
             color: rgba(255,255,255,0.9);
             margin-bottom: 0;
             font-weight: 400;
+        }
+        
+        .location {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.8);
+            margin-top: 0.5rem;
         }
         
         section {
@@ -151,6 +169,63 @@
             vertical-align: middle;
         }
         
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .skill-category {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        
+        .skill-category h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem 0;
+        }
+        
+        .skill-name {
+            font-weight: 500;
+            color: var(--text);
+        }
+        
+        .skill-level {
+            font-size: 0.85rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        
+        .skill-expert {
+            background: var(--success);
+            color: white;
+        }
+        
+        .skill-intermediate {
+            background: var(--warning);
+            color: white;
+        }
+        
+        .skill-beginner {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+        }
+        
         /* Certification and Awards styles */
         .certification-item, .award-item, .timeline-item {
             margin-bottom: 1.5rem;
@@ -230,6 +305,36 @@
             transform: scale(1.03); /* Slightly scale text */
         }
 
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary-light);
+            margin-top: 3rem;
+            border-radius: 8px;
+            color: var(--text-light);
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .footer-links {
+            margin-top: 1rem;
+        }
+        
+        .footer-links a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
         /* Disable all hover effects on mobile */
         @media (max-width: 640px) {
             header {
@@ -257,6 +362,10 @@
                 grid-template-columns: 1fr;
             }
             
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
             .certification-item:hover i, 
             .award-item:hover i,
             .certification-item:hover strong,
@@ -273,26 +382,90 @@
         <img src="Profile.jpg.jpg" alt="Jia Chyen Queek Profile Picture" class="profile-pic">
         <h1>Hi, I'm Jia Chyen Queek (JC)</h1>
         <div class="tagline">Mechanical & Manufacturing Engineering Student | Creative Problem Solver | Automotive Enthusiast</div>
+        <div class="location">📍 Limerick, Ireland</div>
     </header>
 
     <main style="padding: 0 20px;">
         <section>
             <h2>About Me</h2>
-            <p>I'm currently a third-year student in the REEdI Program, studying Mechanical & Manufacturing Engineering. I'm working as a co-op student at Stryker Limerick, where I'm gaining hands-on experience in advanced manufacturing. Alongside this, I'm involved in a range of exciting projects such as automation systems, process optimization, and interdisciplinary collaboration. I'm passionate about innovative problem-solving, practical design, and continuous improvement in engineering.</p>
+            <p>I'm a dedicated third-year student in the REEdI Program at Munster Technological University, specializing in Mechanical & Manufacturing Engineering. Currently working as a co-op student at Stryker Limerick, I'm gaining invaluable hands-on experience in advanced manufacturing processes and quality control systems.</p>
+            <p>My passion lies in innovative problem-solving and practical engineering design. I thrive in collaborative environments where I can apply my technical knowledge to real-world challenges. Through my involvement in various projects, including automation systems and process optimization, I've developed strong analytical and leadership skills that complement my technical expertise.</p>
         </section>
 
         <section class="section-alt">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <a href="n-tutor-project.html" class="project-button">N-Tutor Spark Plus Project</a>
-                <a href="Robotic-arm.html" class="project-button">Robotic Arm</a>
-                <a href="Innovation-challenge.html" class="project-button">MTU Innovation Challenge</a>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Engineering Software</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">SolidWorks</span>
+                        <span class="skill-level skill-intermediate">Intermediate</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MATLAB</span>
+                        <span class="skill-level skill-intermediate">Intermediate</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">AutoCAD</span>
+                        <span class="skill-level skill-beginner">Beginner</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Manufacturing Processes</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">CNC Machining</span>
+                        <span class="skill-level skill-intermediate">Intermediate</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">3D Printing</span>
+                        <span class="skill-level skill-intermediate">Intermediate</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Quality Control</span>
+                        <span class="skill-level skill-intermediate">Intermediate</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Project Management</span>
+                        <span class="skill-level skill-intermediate">Intermediate</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Team Leadership</span>
+                        <span class="skill-level skill-intermediate">Intermediate</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Problem Solving</span>
+                        <span class="skill-level skill-expert">Expert</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section>
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <a href="n-tutor-project.html" class="project-button">
+                    <i class="fas fa-users" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                    N-Tutor Spark Plus Project
+                </a>
+                <a href="Robotic-arm.html" class="project-button">
+                    <i class="fas fa-robot" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                    Robotic Arm Automation
+                </a>
+                <a href="Innovation-challenge.html" class="project-button">
+                    <i class="fas fa-lightbulb" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                    MTU Innovation Challenge
+                </a>
+            </div>
+        </section>
+
+        <section class="section-alt">
             <h2>Education & Experience</h2>
-            <div class="section-title">Timeline</div>
+            <div class="section-title">Professional Timeline</div>
             
             <!-- Education -->
             <div class="timeline-item">
@@ -305,10 +478,18 @@
             <!-- Work Experience -->
             <div class="timeline-item">
                 <i class="fas fa-briefcase"></i>
-                <strong>Treasurer International Society</strong>
-                <div class="timeline-details">Munster Technological University · Full-time</div>
+                <strong>Co-op Student - Manufacturing Engineering</strong>
+                <div class="timeline-details">Stryker Limerick · Full-time</div>
+                <div class="timeline-date">Current</div>
+                <div class="timeline-skills">Manufacturing Processes, Quality Control, Process Optimization</div>
+            </div>
+            
+            <div class="timeline-item">
+                <i class="fas fa-briefcase"></i>
+                <strong>Treasurer - International Society</strong>
+                <div class="timeline-details">Munster Technological University · Leadership Role</div>
                 <div class="timeline-date">Sep 2024 - Present</div>
-                <div class="timeline-skills">Teamwork, Networking</div>
+                <div class="timeline-skills">Financial Management, Team Leadership, Event Planning</div>
             </div>
             
             <div class="timeline-item">
@@ -316,21 +497,13 @@
                 <strong>Part-Time Swimming Instructor</strong>
                 <div class="timeline-details">Optimum Train Swim School · Part-time</div>
                 <div class="timeline-date">Dec 2022 - Jun 2023</div>
-                <div class="timeline-skills">Tutoring, Organization Skills</div>
-            </div>
-            
-            <div class="timeline-item">
-                <i class="fas fa-briefcase"></i>
-                <strong>Full-Time Daycare Teacher</strong>
-                <div class="timeline-details">The Path Learning Center · Full-time</div>
-                <div class="timeline-date">Jan 2023 - Feb 2023</div>
-                <div class="timeline-skills">Communication, Time Management</div>
+                <div class="timeline-skills">Teaching, Communication, Safety Management</div>
             </div>
         </section>
 
-        <section class="section-alt">
-            <h2>Certifications</h2>
-            <div class="section-title">Professional Certifications</div>
+        <section>
+            <h2>Professional Certifications</h2>
+            <div class="section-title">Industry-Recognized Credentials</div>
             
             <div class="certification-item">
                 <a href="https://my.potential.ly/folio/badge/4NY3Lqyq0RL2Jql5" target="_blank">
@@ -357,41 +530,55 @@
             </div>
         </section>
 
-        <section>
-            <h2>Awards</h2>
-            <div class="section-title">Achievements</div>
+        <section class="section-alt">
+            <h2>Awards & Recognition</h2>
+            <div class="section-title">Academic & Professional Achievements</div>
             
             <div class="award-item">
                 <a href="Innovation-challenge.html">
                     <i class="fas fa-trophy"></i>
-                    <strong>Innovation Challenge</strong>
-                    <div class="timeline-details">Best Solution 2024</div>
+                    <strong>MTU Innovation Challenge - Best Solution</strong>
+                    <div class="timeline-details">Awarded for outstanding problem-solving and innovative thinking</div>
                 </a>
             </div>
             
             <div class="award-item">
                 <a href="https://www.linkedin.com/in/jia-chyen-queek-a53193128/overlay/1725995411309/single-media-viewer/?profileId=ACoAAB9Zvx8BZCZ3NU3-zituNP37OC_gSWu0ybI" target="_blank">
                     <i class="fas fa-award"></i>
-                    <strong>Badminton Club</strong>
-                    <div class="timeline-details">Outstanding Performance</div>
+                    <strong>Badminton Club - Outstanding Performance</strong>
+                    <div class="timeline-details">Recognition for leadership and sportsmanship</div>
                 </a>
             </div>
         </section>
 
-        <section class="section-alt">
-            <h2>Contact</h2>
-            <p>Feel free to reach out if you'd like to connect or discuss potential opportunities.</p>
+        <section>
+            <h2>Get In Touch</h2>
+            <p>I'm always interested in new opportunities, collaborations, and professional connections. Whether you'd like to discuss potential projects, share insights about the engineering industry, or simply connect, I'd love to hear from you.</p>
             <div class="contact-info">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jiachyen@gmail.com" target="_blank">
+                <a href="mailto:jiachyen@gmail.com" target="_blank">
                     <i class="fas fa-envelope contact-icon"></i>
                     jiachyen@gmail.com
                 </a>
                 <a href="https://www.linkedin.com/in/jia-chyen-queek-a53193128/" target="_blank">
                     <i class="fab fa-linkedin contact-icon"></i>
-                    Jia Chyen's LinkedIn Profile
+                    Connect on LinkedIn
+                </a>
+                <a href="https://github.com/jiachyen" target="_blank">
+                    <i class="fab fa-github contact-icon"></i>
+                    View on GitHub
                 </a>
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Jia Chyen Queek. All rights reserved.</p>
+        <p>Mechanical & Manufacturing Engineering Portfolio</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="https://www.linkedin.com/in/jia-chyen-queek-a53193128/" target="_blank">LinkedIn</a>
+            <a href="mailto:jiachyen@gmail.com">Email</a>
+        </div>
+    </footer>
 </body>
 </html>

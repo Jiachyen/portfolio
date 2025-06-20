@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robotic Arm Project - A fully custom-designed 4-axis robotic arm with Arduino control and Bluetooth connectivity, showcasing mechanical design and embedded systems skills.">
+    <meta name="keywords" content="Robotic Arm, Arduino, Fusion 360, 3D Printing, Embedded Systems, Mechanical Design, Engineering Project">
+    <meta name="author" content="Jia Chyen Queek">
     <title>Robotic Arm Project | Jia Chyen Queek</title>
     <style>
         :root {
@@ -14,6 +17,7 @@
             --text-light: #718096;
             --border: #e2e8f0;
             --white: #ffffff;
+            --success: #38a169;
         }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -66,12 +70,42 @@
         .project-header {
             margin-bottom: 2rem;
         }
+        .project-header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .project-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 0;
+        }
         .project-content {
             padding: 2rem;
             background: var(--white);
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             margin-bottom: 2rem;
+        }
+        .project-content h2 {
+            color: var(--primary-dark);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .project-content h3 {
+            color: var(--primary-dark);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+        .project-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .project-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
         }
         .tech-tag {
             display: inline-block;
@@ -82,6 +116,7 @@
             font-size: 0.9rem;
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
+            font-weight: 500;
         }
         .back-button {
             display: inline-block;
@@ -97,21 +132,6 @@
             background: var(--primary-dark);
             transform: translateY(-2px);
         }
-        .download-button {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            background: var(--accent);
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.2s ease;
-            margin-left: 1rem;
-        }
-        .download-button:hover {
-            background: #c53030;
-            transform: translateY(-2px);
-        }
         .button-container {
             margin-top: 3rem;
             text-align: center;
@@ -122,6 +142,28 @@
             color: var(--text-light);
             margin-top: 0.5rem;
             margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .highlight-box {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .highlight-box strong {
+            color: var(--primary-dark);
+        }
+        @media (max-width: 640px) {
+            .project-header h1 {
+                font-size: 1.8rem;
+            }
+            .project-content {
+                padding: 1.5rem;
+            }
+            .media-container {
+                flex-direction: column;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -131,25 +173,38 @@
     <header>
         <div class="project-header">
             <h1>Robotic Arm Project</h1>
-            <p style="opacity: 0.9;">Engineering Symposium in REEdI | 2024</p>
+            <p>Engineering Symposium in REEdI</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">2024 | Mechanical Engineering Project</p>
         </div>
     </header>
 
     <main style="padding: 0 20px;">
         <section class="project-content">
-            <h2 style="color: var(--primary-dark); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block;">
-                Project Overview
-            </h2>
+            <h2>Project Overview</h2>
             
             <div class="media-container">
                 <div class="media-item">
                     <img src="robotic-arm-demo.png" class="project-image" alt="Robotic Arm Project">
-                    <p class="caption">Figure 1: The robotic arm system fully designed from scratch using Autodesk Fusion 360.</p>
+                    <p class="caption">Figure 1: The robotic arm system fully designed from scratch using Autodesk Fusion 360</p>
                 </div>
+            </div>
+            
+            <div class="highlight-box">
+                <strong>Key Achievement:</strong> This project was developed entirely independently outside of academic modules, demonstrating strong initiative and self-directed learning capabilities.
             </div>
             
             <h3>Project Description</h3>
             <p>This project is a fully self-designed robotic arm developed for the 2024 Engineering Symposium. All components were created from scratch, 3D modeled in Fusion 360, and manufactured using 3D printing. The system is controlled by an Arduino Uno with integrated Bluetooth functionality, allowing wireless operation via smartphone. The project reflects a combination of mechanical design, electronics, and embedded systems skills.</p>
+            
+            <h3>Technical Specifications</h3>
+            <ul>
+                <li><strong>Design:</strong> Fully custom 4-axis robotic arm with modular architecture</li>
+                <li><strong>CAD Software:</strong> Autodesk Fusion 360 for complete mechanical design</li>
+                <li><strong>Manufacturing:</strong> 3D printed using PETG material on Bambu Lab X1 Carbon</li>
+                <li><strong>Control System:</strong> Arduino Uno microcontroller with custom C++ programming</li>
+                <li><strong>Connectivity:</strong> Bluetooth module for wireless smartphone control</li>
+                <li><strong>Actuators:</strong> Servo motors for precise joint control</li>
+            </ul>
             
             <h3>Demonstration Videos</h3>
             <div class="media-container">
@@ -158,48 +213,52 @@
                         <source src="robotic-arm-demo1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="caption">Video 1：The gripper of the robotic arm controlled by an Arduino Uno, featuring Bluetooth connectivity for wireless control via a smartphone.</p>
+                    <p class="caption">Video 1: Gripper demonstration showing precise control via Arduino Uno and Bluetooth connectivity</p>
                 </div>
                 <div class="media-item">
                     <video class="project-video" controls>
                         <source src="robotic-arm-demo2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p class="caption">"Video 2: The full robotic arm system controlled by an Arduino Uno, with Bluetooth connectivity enabling wireless operation via a smartphone."</p>
+                    <p class="caption">Video 2: Full robotic arm system demonstration with wireless smartphone control</p>
                 </div>
             </div>
             
-            <h3>Key Features</h3>
+            <h3>Key Features & Capabilities</h3>
             <ul>
-                <li>Fully custom-designed 4-axis robotic arm developed for the 2024 Engineering Symposium</li>
-                <li>All mechanical components designed from scratch in Fusion 360</li>
-                <li>3D printed parts using PETG material on the Bambu Lab X1 Carbon printer</li>
-                <li>Arduino Uno-based control system with Bluetooth wireless operation via smartphone</li>
-                <li>Modular design for easy upgrades and experimentation</li>
-                <li>Designed and assembled both mechanical and electrical systems independently</li>
+                <li><strong>Custom Design:</strong> All mechanical components designed from scratch in Fusion 360</li>
+                <li><strong>Additive Manufacturing:</strong> 3D printed parts using advanced PETG material</li>
+                <li><strong>Wireless Control:</strong> Bluetooth-enabled smartphone operation</li>
+                <li><strong>Modular Architecture:</strong> Easy upgrades and component replacement</li>
+                <li><strong>Precision Control:</strong> Servo-based joint control for accurate positioning</li>
+                <li><strong>Independent Development:</strong> Self-directed project outside academic requirements</li>
             </ul>
             
-            <h3>Challenges</h3>
+            <h3>Technical Challenges & Solutions</h3>
             <ul>
-                <li>Originally designed as a 6-axis robotic arm, but motor torque limitations required simplifying to a 4-axis system</li>
-                <li>Built entirely from scratch outside of academic modules, requiring independent learning and initiative</li>
-                <li>Managed the project alongside full-time studies, society involvement, and a part-time job at LANA Asian Street Food</li>
-                <li>Faced challenges with hardware limitations, time constraints, and resource balancing</li>
-                <li>Motivated by personal interest and a desire to demonstrate both technical and soft skills</li>
+                <li><strong>Design Evolution:</strong> Originally planned as 6-axis system, optimized to 4-axis due to motor torque limitations</li>
+                <li><strong>Time Management:</strong> Balanced project development with full-time studies and part-time work</li>
+                <li><strong>Resource Optimization:</strong> Maximized functionality within hardware and budget constraints</li>
+                <li><strong>Learning Curve:</strong> Self-taught advanced CAD modeling and embedded systems programming</li>
+                <li><strong>Integration Challenges:</strong> Successfully combined mechanical, electrical, and software components</li>
             </ul>
             
-            <h3>Technologies Used</h3>
+            <h3>Technologies & Skills Demonstrated</h3>
             <div>
-                <span class="tech-tag">C++</span>
-                <span class="tech-tag">Arduino</span>
-                <span class="tech-tag">Fusion 360</span>
-                <span class="tech-tag">Additive manufacturing</span>
+                <span class="tech-tag">C++ Programming</span>
+                <span class="tech-tag">Arduino Development</span>
+                <span class="tech-tag">Fusion 360 CAD</span>
+                <span class="tech-tag">3D Printing</span>
+                <span class="tech-tag">Bluetooth Communication</span>
+                <span class="tech-tag">Mechanical Design</span>
+                <span class="tech-tag">Embedded Systems</span>
+                <span class="tech-tag">Project Management</span>
             </div>
             
             <div class="button-container">
                 <a href="index.html" class="back-button">
                     <i class="fas fa-arrow-left" style="margin-right: 8px;"></i>
-                    Back to Projects
+                    Back to Portfolio
                 </a>
             </div>
         </section>
